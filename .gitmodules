@@ -1,6 +1,6 @@
 [submodule "vendor/fmdb"]
 	path = vendor/fmdb
-	url = git://github.com/couchbaselabs/fmdb.git
+url=git://github.com/ccgus/fmdb.git
 [submodule "vendor/CocoaHTTPServer"]
 	path = vendor/CocoaHTTPServer
 	url = git://github.com/couchbaselabs/CocoaHTTPServer.git
