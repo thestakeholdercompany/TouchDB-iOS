@@ -261,6 +261,8 @@ static BOOL removeItemIfExists(NSString* path, NSError** outError) {
         dbVersion = 5;
     }
     
+    // the following causing error, commenting it for now
+    /*
     if (dbVersion < 6) {
         // Version 6: enable Write-Ahead Log (WAL) <http://sqlite.org/wal.html>
         NSString* sql = @"PRAGMA journal_mode=WAL; \
@@ -269,7 +271,8 @@ static BOOL removeItemIfExists(NSString* path, NSError** outError) {
             return NO;
         //dbVersion = 6;
     }
-
+    */
+    
 #if DEBUG
     _fmdb.crashOnErrors = YES;
 #endif
